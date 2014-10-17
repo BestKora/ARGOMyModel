@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E41F335E19F16C1700313B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F335D19F16C1700313B0E /* AppDelegate.swift */; };
+		E41F336019F16C1700313B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F335F19F16C1700313B0E /* ViewController.swift */; };
+		E41F336319F16C1700313B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41F336119F16C1700313B0E /* Main.storyboard */; };
+		E41F336519F16C1700313B0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41F336419F16C1700313B0E /* Images.xcassets */; };
+		E41F336819F16C1700313B0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41F336619F16C1700313B0E /* LaunchScreen.xib */; };
+		E41F337419F16C1700313B0E /* Argo_MyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F337319F16C1700313B0E /* Argo_MyModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E41F336E19F16C1700313B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41F335019F16C1700313B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41F335719F16C1700313B0E;
+			remoteInfo = "Argo+MyModel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E41F335819F16C1700313B0E /* Argo+MyModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Argo+MyModel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41F335C19F16C1700313B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41F335D19F16C1700313B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E41F335F19F16C1700313B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E41F336219F16C1700313B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E41F336419F16C1700313B0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E41F336719F16C1700313B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E41F336D19F16C1700313B0E /* Argo+MyModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Argo+MyModelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41F337219F16C1700313B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41F337319F16C1700313B0E /* Argo_MyModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argo_MyModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E41F335519F16C1700313B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41F336A19F16C1700313B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E41F334F19F16C1700313B0E = {
+			isa = PBXGroup;
+			children = (
+				E41F335A19F16C1700313B0E /* Argo+MyModel */,
+				E41F337019F16C1700313B0E /* Argo+MyModelTests */,
+				E41F335919F16C1700313B0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E41F335919F16C1700313B0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41F335819F16C1700313B0E /* Argo+MyModel.app */,
+				E41F336D19F16C1700313B0E /* Argo+MyModelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E41F335A19F16C1700313B0E /* Argo+MyModel */ = {
+			isa = PBXGroup;
+			children = (
+				E41F335D19F16C1700313B0E /* AppDelegate.swift */,
+				E41F335F19F16C1700313B0E /* ViewController.swift */,
+				E41F336119F16C1700313B0E /* Main.storyboard */,
+				E41F336419F16C1700313B0E /* Images.xcassets */,
+				E41F336619F16C1700313B0E /* LaunchScreen.xib */,
+				E41F335B19F16C1700313B0E /* Supporting Files */,
+			);
+			path = "Argo+MyModel";
+			sourceTree = "<group>";
+		};
+		E41F335B19F16C1700313B0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E41F335C19F16C1700313B0E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E41F337019F16C1700313B0E /* Argo+MyModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				E41F337319F16C1700313B0E /* Argo_MyModelTests.swift */,
+				E41F337119F16C1700313B0E /* Supporting Files */,
+			);
+			path = "Argo+MyModelTests";
+			sourceTree = "<group>";
+		};
+		E41F337119F16C1700313B0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E41F337219F16C1700313B0E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E41F335719F16C1700313B0E /* Argo+MyModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41F337719F16C1700313B0E /* Build configuration list for PBXNativeTarget "Argo+MyModel" */;
+			buildPhases = (
+				E41F335419F16C1700313B0E /* Sources */,
+				E41F335519F16C1700313B0E /* Frameworks */,
+				E41F335619F16C1700313B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Argo+MyModel";
+			productName = "Argo+MyModel";
+			productReference = E41F335819F16C1700313B0E /* Argo+MyModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E41F336C19F16C1700313B0E /* Argo+MyModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41F337A19F16C1700313B0E /* Build configuration list for PBXNativeTarget "Argo+MyModelTests" */;
+			buildPhases = (
+				E41F336919F16C1700313B0E /* Sources */,
+				E41F336A19F16C1700313B0E /* Frameworks */,
+				E41F336B19F16C1700313B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41F336F19F16C1700313B0E /* PBXTargetDependency */,
+			);
+			name = "Argo+MyModelTests";
+			productName = "Argo+MyModelTests";
+			productReference = E41F336D19F16C1700313B0E /* Argo+MyModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41F335019F16C1700313B0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Tatiana Kornilova";
+				TargetAttributes = {
+					E41F335719F16C1700313B0E = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E41F336C19F16C1700313B0E = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = E41F335719F16C1700313B0E;
+					};
+				};
+			};
+			buildConfigurationList = E41F335319F16C1700313B0E /* Build configuration list for PBXProject "Argo+MyModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E41F334F19F16C1700313B0E;
+			productRefGroup = E41F335919F16C1700313B0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E41F335719F16C1700313B0E /* Argo+MyModel */,
+				E41F336C19F16C1700313B0E /* Argo+MyModelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E41F335619F16C1700313B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41F336319F16C1700313B0E /* Main.storyboard in Resources */,
+				E41F336819F16C1700313B0E /* LaunchScreen.xib in Resources */,
+				E41F336519F16C1700313B0E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41F336B19F16C1700313B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E41F335419F16C1700313B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41F336019F16C1700313B0E /* ViewController.swift in Sources */,
+				E41F335E19F16C1700313B0E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41F336919F16C1700313B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41F337419F16C1700313B0E /* Argo_MyModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E41F336F19F16C1700313B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41F335719F16C1700313B0E /* Argo+MyModel */;
+			targetProxy = E41F336E19F16C1700313B0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E41F336119F16C1700313B0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41F336219F16C1700313B0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E41F336619F16C1700313B0E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41F336719F16C1700313B0E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E41F337519F16C1700313B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E41F337619F16C1700313B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E41F337819F16C1700313B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Argo+MyModel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E41F337919F16C1700313B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Argo+MyModel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E41F337B19F16C1700313B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Argo+MyModelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Argo+MyModel.app/Argo+MyModel";
+			};
+			name = Debug;
+		};
+		E41F337C19F16C1700313B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Argo+MyModelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Argo+MyModel.app/Argo+MyModel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E41F335319F16C1700313B0E /* Build configuration list for PBXProject "Argo+MyModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41F337519F16C1700313B0E /* Debug */,
+				E41F337619F16C1700313B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41F337719F16C1700313B0E /* Build configuration list for PBXNativeTarget "Argo+MyModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41F337819F16C1700313B0E /* Debug */,
+				E41F337919F16C1700313B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E41F337A19F16C1700313B0E /* Build configuration list for PBXNativeTarget "Argo+MyModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41F337B19F16C1700313B0E /* Debug */,
+				E41F337C19F16C1700313B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E41F335019F16C1700313B0E /* Project object */;
+}
