@@ -20,12 +20,12 @@ class Get {
     class func jsonRequest(url: NSURL, callback: (AnyObject? ) -> ()) {
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url) { data, urlResponse, error in
-            callback(self.parseResult(data,  urlResponse: urlResponse, error: error))
+            callback(self.parseData(data,  urlResponse: urlResponse, error: error))
         }
         task.resume()
     }
     
-    class func parseResult(data: NSData!, urlResponse: NSURLResponse!, error: NSError!) -> AnyObject?  {
+    class func parseData(data: NSData!, urlResponse: NSURLResponse!, error: NSError!) -> AnyObject?  {
         if let err = error {
             return nil
         }

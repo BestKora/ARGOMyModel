@@ -7,22 +7,8 @@
 //
 
 import Foundation
-func dictionary(input: JSONValue)(key :String)  ->  JSONValue? {
-    switch input {
-    case let .JSONObject(d):
-        return d [key]
-    default:
-        return nil
-    }
-}
-func array(input: JSONValue) ->  [JSONValue]? {
-    switch input {
-    case let .JSONArray(arr):
-        return arr
-    default:
-        return nil
-    }
-}
+
+
 struct Place: Printable,JSONDecodable {
     let placeURL: String
     let timeZone: String
@@ -37,16 +23,6 @@ struct Place: Printable,JSONDecodable {
     static func create(placeURL: String)(timeZone: String)(photoCount: String)(content: String) -> Place {
         return Place(placeURL: placeURL, timeZone: timeZone, photoCount: photoCount,content: content)
     }
-    
-    static func stringResult(result: Result<Place> ) -> String {
-        switch result {
-        case let .Error(err):
-            return "\(err.localizedDescription)"
-        case let .Value(box):
-            return "\(box.value.description)"
-        }
-    }
-    
     static var decoder: JSONValue -> Place? {
     return Place.create
         <^> <|"place_url"
@@ -58,7 +34,7 @@ struct Place: Printable,JSONDecodable {
 // ---- Конец структуры Place ----
 
 
-// ----Структура Places ----
+// ----Структура Places со stat----
 
 struct Places: Printable,JSONDecodable {
     let stat:String
@@ -83,12 +59,29 @@ struct Places: Printable,JSONDecodable {
         <*> <||["places", "place"]
     }
 
-    static func stringResult(result: Result<Places> ) -> String {
-        switch result {
-        case let .Error(err):
-            return "\(err.localizedDescription)"
-        case let .Value(box):
-            return "\(box.value.description)"
+}
+// ----Структура Places только [Place]----
+
+struct Places1: Printable,JSONDecodable {
+
+    let places : [Place]
+    
+    var description :String  { get {
+        var str: String = ""
+        for place in self.places {
+            str = str +  "\(place) \n"
+        }
+        return str
         }
     }
+    
+    static func create(places: [Place]) -> Places1 {
+        return Places1( places: places)
+    }
+    
+    static var decoder: JSONValue -> Places1? {
+    return Places1.create
+        <^> <||["places", "place"]
+    }
 }
+

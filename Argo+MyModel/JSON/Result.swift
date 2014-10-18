@@ -17,7 +17,7 @@
 // Result is similar to an Either, except the Left side is always an NSError.
 
 import Foundation
-
+/*
 final class Box<A> {
     let value: A
     
@@ -58,3 +58,4 @@ enum Result<A> {
         }
     }
 }
+*/

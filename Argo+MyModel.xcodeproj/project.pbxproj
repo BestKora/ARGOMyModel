@@ -36,8 +36,8 @@
 		E41F33BA19F16E1B00313B0E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F33B619F16E1B00313B0E /* User.swift */; };
 		E41F33BC19F1710600313B0E /* JSONFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F33BB19F1710600313B0E /* JSONFileReader.swift */; };
 		E41F33BE19F1A0FB00313B0E /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F33BD19F1A0FB00313B0E /* Get.swift */; };
-		E41F33C019F1A1FC00313B0E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F33BF19F1A1FC00313B0E /* Result.swift */; };
 		E41F33C219F1A3ED00313B0E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F33C119F1A3ED00313B0E /* Place.swift */; };
+		E41F33C719F2824200313B0E /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E41F33C619F2824200313B0E /* FlickrFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +83,12 @@
 		E41F33B519F16E1B00313B0E /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		E41F33B619F16E1B00313B0E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E41F33BB19F1710600313B0E /* JSONFileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFileReader.swift; sourceTree = "<group>"; };
-		E41F33BD19F1A0FB00313B0E /* Get.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
-		E41F33BF19F1A1FC00313B0E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E41F33BD19F1A0FB00313B0E /* Get.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Get.swift; path = JSON/Get.swift; sourceTree = "<group>"; };
 		E41F33C119F1A3ED00313B0E /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		E41F33C419F2824200313B0E /* FlickrAPIkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIkey.h; sourceTree = "<group>"; };
+		E41F33C519F2824200313B0E /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		E41F33C619F2824200313B0E /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		E41F33C819F282A400313B0E /* Argo+MyModel-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Argo+MyModel-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,11 +131,13 @@
 		E41F335A19F16C1700313B0E /* Argo+MyModel */ = {
 			isa = PBXGroup;
 			children = (
+				E41F33C819F282A400313B0E /* Argo+MyModel-Bridging-Header.h */,
+				E41F33C319F2824200313B0E /* Flickr */,
 				E41F33B219F16E1B00313B0E /* Models */,
-				E41F339F19F16DF700313B0E /* JSON */,
-				E41F335D19F16C1700313B0E /* AppDelegate.swift */,
+				E41F339F19F16DF700313B0E /* JSON data */,
 				E41F335F19F16C1700313B0E /* ViewController.swift */,
 				E41F336119F16C1700313B0E /* Main.storyboard */,
+				E41F33BD19F1A0FB00313B0E /* Get.swift */,
 				E41F336419F16C1700313B0E /* Images.xcassets */,
 				E41F336619F16C1700313B0E /* LaunchScreen.xib */,
 				E41F335B19F16C1700313B0E /* Supporting Files */,
@@ -143,6 +148,7 @@
 		E41F335B19F16C1700313B0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E41F335D19F16C1700313B0E /* AppDelegate.swift */,
 				E41F335C19F16C1700313B0E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -213,7 +219,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E41F339F19F16DF700313B0E /* JSON */ = {
+		E41F339F19F16DF700313B0E /* JSON data */ = {
 			isa = PBXGroup;
 			children = (
 				E41F33BB19F1710600313B0E /* JSONFileReader.swift */,
@@ -225,9 +231,8 @@
 				E41F33A619F16DF700313B0E /* types_fail_embedded.json */,
 				E41F33A719F16DF700313B0E /* user_with_email.json */,
 				E41F33A819F16DF700313B0E /* user_without_email.json */,
-				E41F33BD19F1A0FB00313B0E /* Get.swift */,
-				E41F33BF19F1A1FC00313B0E /* Result.swift */,
 			);
+			name = "JSON data";
 			path = JSON;
 			sourceTree = "<group>";
 		};
@@ -241,6 +246,16 @@
 				E41F33C119F1A3ED00313B0E /* Place.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E41F33C319F2824200313B0E /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				E41F33C419F2824200313B0E /* FlickrAPIkey.h */,
+				E41F33C519F2824200313B0E /* FlickrFetcher.h */,
+				E41F33C619F2824200313B0E /* FlickrFetcher.m */,
+			);
+			path = Flickr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,11 +377,11 @@
 				E41F335E19F16C1700313B0E /* AppDelegate.swift in Sources */,
 				E41F33B819F16E1B00313B0E /* Post.swift in Sources */,
 				E41F339419F16D1900313B0E /* flatten.swift in Sources */,
+				E41F33C719F2824200313B0E /* FlickrFetcher.m in Sources */,
 				E41F339719F16D1900313B0E /* pure.swift in Sources */,
 				E41F33B719F16E1B00313B0E /* Comment.swift in Sources */,
 				E41F339819F16D1900313B0E /* JSONOperators.swift in Sources */,
 				E41F33B919F16E1B00313B0E /* TestModel.swift in Sources */,
-				E41F33C019F1A1FC00313B0E /* Result.swift in Sources */,
 				E41F33C219F1A3ED00313B0E /* Place.swift in Sources */,
 				E41F339519F16D1900313B0E /* JSON.swift in Sources */,
 				E41F339619F16D1900313B0E /* JSONValue.swift in Sources */,
@@ -495,6 +510,7 @@
 				INFOPLIST_FILE = "Argo+MyModel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Argo+MyModel/Argo+MyModel-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -505,6 +521,7 @@
 				INFOPLIST_FILE = "Argo+MyModel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Argo+MyModel/Argo+MyModel-Bridging-Header.h";
 			};
 			name = Release;
 		};
