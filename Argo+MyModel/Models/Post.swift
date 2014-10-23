@@ -3,6 +3,7 @@ struct Post:Printable {
   let text: String
   let author: User
   let comments: [Comment]
+    
     var description :String  { get {
         var str: String = ""
         for comment in self.comments {
@@ -28,3 +29,4 @@ extension Post: JSONDecodable {
       <*> <||"comments"
   }
 }
+

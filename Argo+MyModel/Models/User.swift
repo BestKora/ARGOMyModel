@@ -5,7 +5,10 @@ struct User {
 }
 
 
-extension User: JSONDecodable {
+extension User: JSONDecodable , Printable{
+    var description : String {
+        return "User { id = \(id), name = \(name), email = \(email)} \n"
+    }
   static func create(id: Int)(name: String)(email: String?) -> User {
     return User(id: id, name: name, email: email)
   }

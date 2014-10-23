@@ -38,6 +38,7 @@
 		E41F33BE19F1A0FB00313B0E /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F33BD19F1A0FB00313B0E /* Get.swift */; };
 		E41F33C219F1A3ED00313B0E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F33C119F1A3ED00313B0E /* Place.swift */; };
 		E41F33C719F2824200313B0E /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E41F33C619F2824200313B0E /* FlickrFetcher.m */; };
+		E4CE367E19F9739900D95C53 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE367D19F9739900D95C53 /* Blog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		E41F33C519F2824200313B0E /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		E41F33C619F2824200313B0E /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		E41F33C819F282A400313B0E /* Argo+MyModel-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Argo+MyModel-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4CE367D19F9739900D95C53 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				E41F33B519F16E1B00313B0E /* TestModel.swift */,
 				E41F33B619F16E1B00313B0E /* User.swift */,
 				E41F33C119F1A3ED00313B0E /* Place.swift */,
+				E4CE367D19F9739900D95C53 /* Blog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				E41F33BA19F16E1B00313B0E /* User.swift in Sources */,
 				E41F33BC19F1710600313B0E /* JSONFileReader.swift in Sources */,
 				E41F335E19F16C1700313B0E /* AppDelegate.swift in Sources */,
+				E4CE367E19F9739900D95C53 /* Blog.swift in Sources */,
 				E41F33B819F16E1B00313B0E /* Post.swift in Sources */,
 				E41F339419F16D1900313B0E /* flatten.swift in Sources */,
 				E41F33C719F2824200313B0E /* FlickrFetcher.m in Sources */,
@@ -578,6 +582,7 @@
 				E41F337919F16C1700313B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41F337A19F16C1700313B0E /* Build configuration list for PBXNativeTarget "Argo+MyModelTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +591,7 @@
 				E41F337C19F16C1700313B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
