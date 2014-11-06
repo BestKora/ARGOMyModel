@@ -12,7 +12,7 @@ import Foundation
 struct Place: Printable,JSONDecodable {
     let placeURL: String
     let timeZone: String
-    let photoCount : String
+    let photoCount : Int
     let content : String
     
     
@@ -21,7 +21,7 @@ struct Place: Printable,JSONDecodable {
     }
     
     static func create(placeURL: String)(timeZone: String)(photoCount: String)(content: String) -> Place {
-        return Place(placeURL: placeURL, timeZone: timeZone, photoCount: photoCount,content: content)
+        return Place(placeURL: placeURL, timeZone: timeZone, photoCount: photoCount.toInt() ?? 0,content: content)
     }
     static var decoder: JSONValue -> Place? {
     return Place.create

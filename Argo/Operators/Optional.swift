@@ -6,6 +6,7 @@ public func >>-<A, B>(a: A?, f: A -> B?) -> B? {
   }
 }
 
+
 public func <^><A, B>(f: A -> B, a: A?) -> B? {
   if let x = a {
     return f(x)
